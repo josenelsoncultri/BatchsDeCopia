@@ -45,7 +45,7 @@ IF [%1]==[] (
 	set env=%1
 )
 
-call %RootBatchPath%Variaveis_GX17.bat %env%
+call "%RootBatchPath%Variaveis_GX17.bat" %env%
 
 if %env%==1 (
 	set Titulo=Oracle

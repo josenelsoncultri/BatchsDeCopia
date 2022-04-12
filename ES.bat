@@ -35,4 +35,4 @@ xcopy %PathES%bin\*wpq* %PathApp%\bin /Y /D:%1
 xcopy %PathES%bin\*rpq* %PathApp%\bin /Y /D:%1
 xcopy %PathES%bin\*tam* %PathApp%\bin /Y /D:%1
 xcopy %PathES%bin\*wam* %PathApp%\bin /Y /D:%1
-xcopy %PathES%bin\*ram* %PathApp%\bin /Y /D:%1
+xcopy %PathES%bin\*ram* %PathApp%\bin /Y /D:%1 /EXCLUDE:GeneXus.Programs.Common.dll

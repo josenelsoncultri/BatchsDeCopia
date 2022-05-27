@@ -78,6 +78,8 @@ IF %SolicitarKB%==1 (
 
 IF [%CopiarKB%]==[] (
 	set CopiarKB=T
+) ELSE (
+	for /f "usebackq delims=" %%I in (`powershell "\"%CopiarKB%\".toUpper()"`) do set "CopiarKB=%%~I"
 )
 
 cls

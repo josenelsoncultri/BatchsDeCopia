@@ -31,6 +31,11 @@ xcopy %PathCT%*wcc*.js %PathApp% /D:%1 /Y
 xcopy %PathCT%*tcc*.js %PathApp% /D:%1 /Y
 xcopy %PathCT%*rcc*.js %PathApp% /D:%1 /Y
 
+xcopy %PathCT%*plc*.js %PathApp% /D:%1 /Y
+xcopy %PathCT%*wlc*.js %PathApp% /D:%1 /Y
+xcopy %PathCT%*tlc*.js %PathApp% /D:%1 /Y
+xcopy %PathCT%*rlc*.js %PathApp% /D:%1 /Y
+
 rem Objetos de configuração (CHBMenus, CHBCabecalho, CHBMasterPage...)
 xcopy %PathCT%chb*.js %PathApp% /D:%1 /Y
 xcopy %PathCT%confirm.js %PathApp% /D:%1 /Y
@@ -77,6 +82,11 @@ xcopy %PathCT%bin\*pcc* %PathApp%\bin /D:%1 /Y
 xcopy %PathCT%bin\*wcc* %PathApp%\bin /D:%1 /Y
 xcopy %PathCT%bin\*tcc* %PathApp%\bin /D:%1 /Y
 xcopy %PathCT%bin\*rcc* %PathApp%\bin /D:%1 /Y
+
+xcopy %PathCT%bin\*plc* %PathApp%\bin /D:%1 /Y
+xcopy %PathCT%bin\*wlc* %PathApp%\bin /D:%1 /Y
+xcopy %PathCT%bin\*tlc* %PathApp%\bin /D:%1 /Y
+xcopy %PathCT%bin\*rlc* %PathApp%\bin /D:%1 /Y
 
 xcopy %PathCT%bin\asubmenuprovider.dll %PathApp%\bin /D:%1 /Y
 

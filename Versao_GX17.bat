@@ -1,1 +1,3 @@
-set Versao=20220519
+set Versao=20221118
+set RootAppsPath=C:\inetpub\wwwroot\
+set RootBasesPath=C:\Bases\CHBWEB\ATUAIS_GX17\

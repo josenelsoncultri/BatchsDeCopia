@@ -2,8 +2,6 @@ rem @echo off
 
 set RootBatchPath=%~dp0%
 call "%RootBatchPath%Versao_GX17.bat"
-set RootAppsPath=C:\inetpub\wwwroot\
-set RootBasesPath=C:\Bases\CHBWEB\ATUAIS_GX17\
 
 IF %1%==1 (
 	set Environment=5

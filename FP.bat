@@ -31,30 +31,37 @@ xcopy %PathFP%*pmd*.js %PathApp% /D:%1 /Y
 cd bin
 xcopy %PathFP%bin\*tfp* %PathApp%\bin /D:%1 /Y
 xcopy %PathFP%bin\*wfp* %PathApp%\bin /D:%1 /Y
+xcopy %PathFP%bin\*wsfp* %PathApp%\bin /D:%1 /Y
 xcopy %PathFP%bin\*rfp* %PathApp%\bin /D:%1 /Y
 xcopy %PathFP%bin\*pfp* %PathApp%\bin /D:%1 /Y
 xcopy %PathFP%bin\*trh* %PathApp%\bin /D:%1 /Y
 xcopy %PathFP%bin\*wrh* %PathApp%\bin /D:%1 /Y
+xcopy %PathFP%bin\*wsrh* %PathApp%\bin /D:%1 /Y
 xcopy %PathFP%bin\*rrh* %PathApp%\bin /D:%1 /Y
 xcopy %PathFP%bin\*prh* %PathApp%\bin /D:%1 /Y
 xcopy %PathFP%bin\*tdp* %PathApp%\bin /D:%1 /Y
 xcopy %PathFP%bin\*wdp* %PathApp%\bin /D:%1 /Y
+xcopy %PathFP%bin\*wsdp* %PathApp%\bin /D:%1 /Y
 xcopy %PathFP%bin\*rdp* %PathApp%\bin /D:%1 /Y
 xcopy %PathFP%bin\*pdp* %PathApp%\bin /D:%1 /Y
 xcopy %PathFP%bin\*tpe* %PathApp%\bin /D:%1 /Y
 xcopy %PathFP%bin\*wpe* %PathApp%\bin /D:%1 /Y
+xcopy %PathFP%bin\*wspe* %PathApp%\bin /D:%1 /Y
 xcopy %PathFP%bin\*rpe* %PathApp%\bin /D:%1 /Y
 xcopy %PathFP%bin\*ppe* %PathApp%\bin /D:%1 /Y
 
 xcopy %PathFP%bin\*tgp* %PathApp%\bin /D:%1 /Y
 xcopy %PathFP%bin\*wgp* %PathApp%\bin /D:%1 /Y
+xcopy %PathFP%bin\*wsgp* %PathApp%\bin /D:%1 /Y
 xcopy %PathFP%bin\*rgp* %PathApp%\bin /D:%1 /Y
 xcopy %PathFP%bin\*pgp* %PathApp%\bin /D:%1 /Y
 xcopy %PathFP%bin\*tst* %PathApp%\bin /D:%1 /Y
 xcopy %PathFP%bin\*wst* %PathApp%\bin /D:%1 /Y
+xcopy %PathFP%bin\*wsst* %PathApp%\bin /D:%1 /Y
 xcopy %PathFP%bin\*rst* %PathApp%\bin /D:%1 /Y
 xcopy %PathFP%bin\*pst* %PathApp%\bin /D:%1 /Y
 xcopy %PathFP%bin\*tmd* %PathApp%\bin /D:%1 /Y
 xcopy %PathFP%bin\*wmd* %PathApp%\bin /D:%1 /Y
+xcopy %PathFP%bin\*wsmd* %PathApp%\bin /D:%1 /Y
 xcopy %PathFP%bin\*rmd* %PathApp%\bin /D:%1 /Y
 xcopy %PathFP%bin\*pmd* %PathApp%\bin /D:%1 /Y

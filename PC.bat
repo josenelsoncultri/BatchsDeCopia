@@ -9,9 +9,11 @@ xcopy %PathPC%*pex*.js %PathApp% /D:%1 /Y
 
 xcopy %PathPC%bin\*tpc* %PathApp%\bin /D:%1 /Y
 xcopy %PathPC%bin\*wpc* %PathApp%\bin /D:%1 /Y
+xcopy %PathPC%bin\*wspc* %PathApp%\bin /D:%1 /Y
 xcopy %PathPC%bin\*rpc* %PathApp%\bin /D:%1 /Y
 xcopy %PathPC%bin\*ppc* %PathApp%\bin /D:%1 /Y
 xcopy %PathPC%bin\*tex* %PathApp%\bin /D:%1 /Y
 xcopy %PathPC%bin\*wex* %PathApp%\bin /D:%1 /Y
+xcopy %PathPC%bin\*wsex* %PathApp%\bin /D:%1 /Y
 xcopy %PathPC%bin\*rex* %PathApp%\bin /D:%1 /Y
 xcopy %PathPC%bin\*pex* %PathApp%\bin /D:%1 /Y

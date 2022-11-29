@@ -1,7 +1,7 @@
 call %~dp0%Versao_GX17.bat
-powershell -File EditarKnowledgebaseConnection.ps1
+powershell -File .\PowerShell\EditarKnowledgebaseConnection.ps1
 call %~dp0%Permissoes.bat
-powershell -File AtalhosBases.ps1
+powershell -File .\PowerShell\AtalhosBases.ps1
 
 set sqlserver="PCDEV410\SQLDEV2017"
 

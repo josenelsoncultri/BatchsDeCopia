@@ -96,58 +96,58 @@ IF %EncerrarPool%==1 (
 TITLE Copiando, aguarde...
 IF %CopiarKB%==CT (
 	echo Base CT
-	call "%RootBatchPath%CT.bat" %data%
+	call "%RootBatchPath%BatchsBases\CT.bat" %data%
 ) ELSE IF %CopiarKB%==T (
 	echo Base CT
-	call "%RootBatchPath%CT.bat" %data%
+	call "%RootBatchPath%BatchsBases\CT.bat" %data%
 )
 
 IF %CopiarKB%==AG (
 	echo Base AG
-	call "%RootBatchPath%AG.bat" %data%
+	call "%RootBatchPath%BatchsBases\AG.bat" %data%
 ) ELSE IF %CopiarKB%==T (
 	echo Base AG
-	call "%RootBatchPath%AG.bat" %data%
+	call "%RootBatchPath%BatchsBases\AG.bat" %data%
 )
 
 IF %CopiarKB%==ES (
 	echo Base ES
-	call "%RootBatchPath%ES.bat" %data%
+	call "%RootBatchPath%BatchsBases\ES.bat" %data%
 ) ELSE IF %CopiarKB%==T (
 	echo Base ES
-	call "%RootBatchPath%ES.bat" %data%
+	call "%RootBatchPath%BatchsBases\ES.bat" %data%
 )
 
 IF %CopiarKB%==FN (
 	echo Base FN
-	call "%RootBatchPath%FN.bat" %data%
+	call "%RootBatchPath%BatchsBases\FN.bat" %data%
 ) ELSE IF %CopiarKB%==T (
 	echo Base FN
-	call "%RootBatchPath%FN.bat" %data%
+	call "%RootBatchPath%BatchsBases\FN.bat" %data%
 ) 
 
 IF %CopiarKB%==AU (
 	echo Base Auditoria
-	call "%RootBatchPath%AU.bat" %data%
+	call "%RootBatchPath%BatchsBases\AU.bat" %data%
 ) ELSE IF %CopiarKB%==T (
 	echo Base Auditoria
-	call "%RootBatchPath%AU.bat" %data%
+	call "%RootBatchPath%BatchsBases\AU.bat" %data%
 )
 
 IF %CopiarKB%==PC (
 	echo Base PC
-	call "%RootBatchPath%PC.bat" %data%
+	call "%RootBatchPath%BatchsBases\PC.bat" %data%
 ) ELSE IF %CopiarKB%==T (
 	echo Base PC
-	call "%RootBatchPath%PC.bat" %data%
+	call "%RootBatchPath%BatchsBases\PC.bat" %data%
 )
 
 IF %CopiarKB%==FP (
 	echo Base FP
-	call "%RootBatchPath%FP.bat" %data%
+	call "%RootBatchPath%BatchsBases\FP.bat" %data%
 ) ELSE IF %CopiarKB%==T (
 	echo Base FP
-	call "%RootBatchPath%FP.bat" %data%
+	call "%RootBatchPath%BatchsBases\FP.bat" %data%
 )
 
 IF %EncerrarPool%==1 (

@@ -127,11 +127,6 @@ rem xcopy %PathCT%bin\*k2bwwmasterpageflat* %PathApp%\bin /D:%1 /Y
 xcopy %PathCT%*k2b*.js %PathApp% /D:%1 /Y
 xcopy %PathCT%bin\*k2b* %PathApp%\bin /D:%1 /Y
 
-
-
-
-
-
 rem Testes
 xcopy %PathCT%index.js %PathApp% /D:%1 /Y
 xcopy %PathCT%antiga*.js %PathApp% /D:%1 /Y
@@ -140,3 +135,7 @@ xcopy %PathCT%nova*.js %PathApp% /D:%1 /Y
 xcopy %PathCT%bin\index.dll %PathApp%\bin /D:%1 /Y
 xcopy %PathCT%bin\antiga*.dll %PathApp%\bin /D:%1 /Y
 xcopy %PathCT%bin\nova*.dll %PathApp%\bin /D:%1 /Y
+
+rem JavaScripts gerais
+xcopy %PathCT%blip-chat.js %PathApp% /D:%1 /Y
+xcopy %PathCT%blip-loader.js %PathApp% /D:%1 /Y

@@ -33,6 +33,12 @@ xcopy %PathAG%*tlb*.js %PathApp% /D:%1 /Y
 xcopy %PathAG%*wlb*.js %PathApp% /D:%1 /Y
 xcopy %PathAG%*rlb*.js %PathApp% /D:%1 /Y
 
+:: Rotinas do módulo de Silos e Armazéns
+xcopy %PathAG%*psa*.js %PathApp% /D:%1 /Y
+xcopy %PathAG%*tsa*.js %PathApp% /D:%1 /Y
+xcopy %PathAG%*wsa*.js %PathApp% /D:%1 /Y
+xcopy %PathAG%*rsa*.js %PathApp% /D:%1 /Y
+
 cd bin
 xcopy %PathAG%bin\*tfr* %PathApp%\bin /D:%1 /Y
 xcopy %PathAG%bin\*wfr* %PathApp%\bin /D:%1 /Y
@@ -85,3 +91,10 @@ xcopy %PathAG%bin\*wef* %PathApp%\bin /D:%1 /Y
 xcopy %PathAG%bin\*wsef* %PathApp%\bin /D:%1 /Y
 xcopy %PathAG%bin\*ref* %PathApp%\bin /D:%1 /Y
 xcopy %PathAG%bin\*pef* %PathApp%\bin /D:%1 /Y
+
+
+xcopy %PathAG%bin\*tsa* %PathApp%\bin /D:%1 /Y
+xcopy %PathAG%bin\*wsa* %PathApp%\bin /D:%1 /Y
+xcopy %PathAG%bin\*wssa* %PathApp%\bin /D:%1 /Y
+xcopy %PathAG%bin\*rsa* %PathApp%\bin /D:%1 /Y
+xcopy %PathAG%bin\*psa* %PathApp%\bin /D:%1 /Y

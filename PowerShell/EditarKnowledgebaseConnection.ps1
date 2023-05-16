@@ -28,7 +28,7 @@
     [OutputType()]
     param (
         [Parameter(Mandatory = $true)]
-        [ValidateScript({Test-Path -Path $_ -PathType 'Leaf'})]
+        [ValidateScript({ Test-Path -Path $_ -PathType 'Leaf' })]
         [string[]]$FilePath,
         [Parameter(Mandatory = $true)]
         [string]$Find,
@@ -51,21 +51,26 @@
                         if ((Test-Path -Path $NewFilePath -PathType 'Leaf') -and $Force.IsPresent) {
                             Remove-Item -Path $NewFilePath -Force
                             (Get-Content $File) -replace $Find, $Replace | Add-Content -Path $NewFilePath -Force
-                        } elseif ((Test-Path -Path $NewFilePath -PathType 'Leaf') -and !$Force.IsPresent) {
+                        }
+                        elseif ((Test-Path -Path $NewFilePath -PathType 'Leaf') -and !$Force.IsPresent) {
                             Write-Warning "The file at '$NewFilePath' already exists and the -Force param was not used"
-                        } else {
+                        }
+                        else {
                             (Get-Content $File) -replace $Find, $Replace | Add-Content -Path $NewFilePath -Force
                         }
-                    } else {
+                    }
+                    else {
                         (Get-Content $File) -replace $Find, $Replace | Add-Content -Path "$File.tmp" -Force
                         Remove-Item -Path $File
                         Move-Item -Path "$File.tmp" -Destination $File
                     }
-                } else {
+                }
+                else {
                     Select-String -Path $File -Pattern $Find
                 }
             }
-        } catch {
+        }
+        catch {
             Write-Error $_.Exception.Message
         }
     }
@@ -76,38 +81,34 @@ $Bases = @("AU", "AG", "CT", "ES", "FN", "FP", "PC", "GX", "WS")
 $ServerInstance = '<ServerInstance>' + [System.Environment]::MachineName + '\SQLDEV2017</ServerInstance>'
 $HostName = '<HostName>' + [System.Environment]::MachineName + '</HostName>'
 
-ForEach ($Base In $Bases) 
-{	
-	$BaseFilePath = $env:RootBasesPath + "BASEGX17-" + $Base + "-" + $env:Versao
-    $Arquivo =  $BaseFilePath + "\knowledgebase.connection"
+ForEach ($Base In $Bases) {	
+    $BaseFilePath = $env:RootBasesPath + "BASEGX17-" + $Base + "-" + $env:Versao
+    $Arquivo = $BaseFilePath + "\knowledgebase.connection"
 	
-	If ($Base -eq "AU")
-	{
-		$ArquivoDB = "GX_KB_KBAuditoria"
-	}
-	ElseIf ($Base -eq "WS")
-	{
-		$ArquivoDB = "GX_KB_BASE-WS"
-	}
-	ElseIf ($Base -eq "GX")
-	{
-		$ArquivoDB = "GX_KB_GXData"
-	}
-	Else
-	{
-		$ArquivoDB = "GX_KB_BASE_" + $Base
-	}
+    If ($Base -eq "AU") {
+        $ArquivoDB = "GX_KB_KBAuditoria"
+    }
+    ElseIf ($Base -eq "WS") {
+        $ArquivoDB = "GX_KB_BASE-WS"
+    }
+    ElseIf ($Base -eq "GX") {
+        $ArquivoDB = "GX_KB_GXData"
+    }
+    Else {
+        $ArquivoDB = "GX_KB_BASE_" + $Base
+    }
 	
-	$DefaultDBName = '<DBName>GX17_KB_BASE_XX_' + $env:Versao + '</DBName>'
-	$DBName = '<DBName>GX17_KB_BASE_' + $Base + '_' + $env:Versao + '</DBName>'
-	$DataFile = '<DataFile>' + $ArquivoDB + '.mdf</DataFile>'
-	$LogFile = '<LogFile>' + $ArquivoDB + '_log.LDF</LogFile>'
+    $DefaultDBName = '<DBName>GX17_KB_BASE_XX_' + $env:Versao + '</DBName>'
+    $DBName = '<DBName>GX17_KB_BASE_' + $Base + '_' + $env:Versao + '</DBName>'
+    $DataFile = '<DataFile>' + $ArquivoDB + '.mdf</DataFile>'
+    $LogFile = '<LogFile>' + $ArquivoDB + '_log.LDF</LogFile>'
+    $BasePath = 'D:\CONFIGURE_TUDO_COM_DADOS_DA_SUA_MAQUINA_E_ATACHE_NO_SQLSERVER17\BASEGX17-XX-' + $env:Versao
 	
 	
-    Find-InTextFile -FilePath $Arquivo -Find 'D:\CONFIGURE_TUDO_COM_DADOS_DA_SUA_MAQUINA_E_ATACHE_NO_SQLSERVER17\BASEGX17-XX-20221118' -Replace $BaseFilePath
-	Find-InTextFile -FilePath $Arquivo -Find '<HostName>PC999</HostName>' -Replace $HostName
-	Find-InTextFile -FilePath $Arquivo -Find '<ServerInstance>PC999</ServerInstance>' -Replace $ServerInstance
-	Find-InTextFile -FilePath $Arquivo -Find '<DataFile>GX_KB_BASE_XX.mdf</DataFile>' -Replace $DataFile
-	Find-InTextFile -FilePath $Arquivo -Find '<LogFile>GX_KB_BASE_XX_log.LDF</LogFile>' -Replace $LogFile
-	Find-InTextFile -FilePath $Arquivo -Find $DefaultDBName -Replace $DBName
+    Find-InTextFile -FilePath $Arquivo -Find $BasePath -Replace $BaseFilePath
+    Find-InTextFile -FilePath $Arquivo -Find '<HostName>PC999</HostName>' -Replace $HostName
+    Find-InTextFile -FilePath $Arquivo -Find '<ServerInstance>PC999</ServerInstance>' -Replace $ServerInstance
+    Find-InTextFile -FilePath $Arquivo -Find '<DataFile>GX_KB_BASE_XX.mdf</DataFile>' -Replace $DataFile
+    Find-InTextFile -FilePath $Arquivo -Find '<LogFile>GX_KB_BASE_XX_log.LDF</LogFile>' -Replace $LogFile
+    Find-InTextFile -FilePath $Arquivo -Find $DefaultDBName -Replace $DBName
 }

@@ -139,3 +139,16 @@ xcopy %PathCT%bin\nova*.dll %PathApp%\bin /D:%1 /Y
 rem JavaScripts gerais
 xcopy %PathCT%blip-chat.js %PathApp% /D:%1 /Y
 xcopy %PathCT%blip-loader.js %PathApp% /D:%1 /Y
+
+rem Módulo de Hospital
+xcopy %PathCT%*ths*.js %PathApp% /D:%1 /Y
+xcopy %PathCT%*whs*.js %PathApp% /D:%1 /Y
+xcopy %PathCT%*rhs*.js %PathApp% /D:%1 /Y
+xcopy %PathCT%*phs*.js %PathApp% /D:%1 /Y
+xcopy %PathCT%bin\*phs* %PathApp%\bin /D:%1 /Y
+xcopy %PathCT%bin\*whs* %PathApp%\bin /D:%1 /Y
+xcopy %PathCT%bin\*ths* %PathApp%\bin /D:%1 /Y
+xcopy %PathCT%bin\*rhs* %PathApp%\bin /D:%1 /Y
+xcopy %PathCT%bin\*apwshs* %PathApp%\bin /D:%1 /Y
+xcopy %PathCT%menuhospital*.js %PathApp% /D:%1 /Y
+xcopy %PathCT%bin\menuhospital*.dll %PathApp%\bin /D:%1 /Y

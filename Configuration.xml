@@ -1,0 +1,13 @@
+<Configurations>
+  <KbPaths>
+    <Path>C:\Bases\CHBWEB\ATUAIS_GX17\BASEGX17-AG-20230519\</Path>
+    <Path>C:\Bases\CHBWEB\ATUAIS_GX17\BASEGX17-CT-20230519\</Path>
+    <Path>C:\Bases\CHBWEB\ATUAIS_GX17\BASEGX17-ES-20230519\</Path>
+    <Path>C:\Bases\CHBWEB\ATUAIS_GX17\BASEGX17-FN-20230519\</Path>
+    <Path>C:\Bases\CHBWEB\ATUAIS_GX17\BASEGX17-FP-20230519\</Path>
+    <Path>C:\Bases\CHBWEB\ATUAIS_GX17\BASEGX17-PC-20230519\</Path>
+  </KbPaths>
+  <OraclePath>C:\inetpub\wwwroot\chbwebora_gx17\</OraclePath>
+  <PostPath>C:\inetpub\wwwroot\chbwebpos_gx17\</PostPath>
+  <SqlPath>C:\inetpub\wwwroot\chbwebsql_gx17\</SqlPath>
+</Configurations>

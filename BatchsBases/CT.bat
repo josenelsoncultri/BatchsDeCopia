@@ -106,10 +106,10 @@ rem Cópia do tema
 xcopy %PathCT%Resources\Portuguese\GeneXusX.css %PathApp%\Resources\Portuguese /D:%1 /Y
 xcopy %PathCT%Resources\Portuguese\K2BFlat.css %PathApp%\Resources\Portuguese /D:%1 /Y
 xcopy %PathCT%Images.txt %PathApp% /D:%1 /Y
-xcopy %PathCT%Resources\*.png %PathApp% /D:%1 /Y
-xcopy %PathCT%Resources\*.jpg %PathApp% /D:%1 /Y
-xcopy %PathCT%Resources\*.gif %PathApp% /D:%1 /Y
-xcopy %PathCT%Resources\*.ico %PathApp% /D:%1 /Y
+xcopy %PathCT%Resources\*.png %PathApp%\Resources /D:%1 /Y
+xcopy %PathCT%Resources\*.jpg %PathApp%\Resources /D:%1 /Y
+xcopy %PathCT%Resources\*.gif %PathApp%\Resources /D:%1 /Y
+xcopy %PathCT%Resources\*.ico %PathApp%\Resources /D:%1 /Y
 
 rem DLL de programas comuns
 xcopy %PathCT%bin\GeneXus.Programs.Common.dll %PathApp%\bin /D:%1 /Y

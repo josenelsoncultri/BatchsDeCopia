@@ -76,7 +76,7 @@
     }
 }
 
-$Bases = @("AU", "AG", "CT", "ES", "FN", "FP", "PC", "GX", "WS")
+$Bases = @("AG", "CT", "ES", "FN", "FP", "PC", "GX", "AU", "WS")
 
 $ServerInstance = '<ServerInstance>' + [System.Environment]::MachineName + '\SQLDEV2017</ServerInstance>'
 $HostName = '<HostName>' + [System.Environment]::MachineName + '</HostName>'

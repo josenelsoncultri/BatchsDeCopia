@@ -3,7 +3,7 @@ $DesktopFolder = [System.Environment]::GetFolderPath("Desktop")
 $objShell = New-Object -com "WScript.Shell"
 $CaminhoRaiz = "C:\\Bases\\CHBWEB\\ATUAIS_GX17\\"
 
-$Bases = @("AU", "AG", "CT", "ES", "FN", "FP", "PC", "GX", "WS")
+$Bases = @("AG", "CT", "ES", "FN", "FP", "PC", "GX", "AU", "WS")
 
 ForEach ($BaseAtalho In $Bases)
 {

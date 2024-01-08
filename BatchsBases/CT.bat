@@ -159,3 +159,6 @@ xcopy %PathCT%bin\*rhs* %PathApp%\bin /D:%1 /Y
 xcopy %PathCT%bin\*apwshs* %PathApp%\bin /D:%1 /Y
 xcopy %PathCT%menuhospital*.js %PathApp% /D:%1 /Y
 xcopy %PathCT%bin\menuhospital*.dll %PathApp%\bin /D:%1 /Y
+
+xcopy %PathCT%bin\api*.dll %PathApp%\bin /D:%1 /Y
+xcopy %PathCT%private\*.json %PathApp%\private /D:%1 /Y

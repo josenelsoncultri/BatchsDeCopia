@@ -162,3 +162,4 @@ xcopy %PathCT%bin\menuhospital*.dll %PathApp%\bin /D:%1 /Y
 
 xcopy %PathCT%bin\api*.dll %PathApp%\bin /D:%1 /Y
 xcopy %PathCT%private\*.json %PathApp%\private /D:%1 /Y
+xcopy %PathCT%*.yaml %PathApp% /D:%1 /Y

@@ -9,6 +9,7 @@ IF %1%==1 (
 ) ELSE IF %1%==2 (
 		set Environment=8
 		set PathApp=%RootAppsPath%chbwebpos_gx17
+		rem set PathApp=%RootAppsPath%teste_agrotis
 	) ELSE IF %1%==3 (
 			set Environment=6
 			set PathApp=%RootAppsPath%chbwebsql_gx17

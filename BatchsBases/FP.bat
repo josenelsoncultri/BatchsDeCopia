@@ -14,6 +14,10 @@ xcopy %PathFP%*tpe*.js %PathApp% /D:%1 /Y
 xcopy %PathFP%*wpe*.js %PathApp% /D:%1 /Y
 xcopy %PathFP%*rpe*.js %PathApp% /D:%1 /Y
 xcopy %PathFP%*ppe*.js %PathApp% /D:%1 /Y
+xcopy %PathFP%*tpp*.js %PathApp% /D:%1 /Y
+xcopy %PathFP%*wpp*.js %PathApp% /D:%1 /Y
+xcopy %PathFP%*rpp*.js %PathApp% /D:%1 /Y
+xcopy %PathFP%*ppp*.js %PathApp% /D:%1 /Y
 
 xcopy %PathFP%*tgp*.js %PathApp% /D:%1 /Y
 xcopy %PathFP%*wgp*.js %PathApp% /D:%1 /Y
@@ -49,6 +53,12 @@ xcopy %PathFP%bin\*wpe* %PathApp%\bin /D:%1 /Y
 xcopy %PathFP%bin\*wspe* %PathApp%\bin /D:%1 /Y
 xcopy %PathFP%bin\*rpe* %PathApp%\bin /D:%1 /Y
 xcopy %PathFP%bin\*ppe* %PathApp%\bin /D:%1 /Y
+
+xcopy %PathFP%bin\*tpp* %PathApp%\bin /D:%1 /Y
+xcopy %PathFP%bin\*wpp* %PathApp%\bin /D:%1 /Y
+xcopy %PathFP%bin\*wspp* %PathApp%\bin /D:%1 /Y
+xcopy %PathFP%bin\*rpp* %PathApp%\bin /D:%1 /Y
+xcopy %PathFP%bin\*ppp* %PathApp%\bin /D:%1 /Y
 
 xcopy %PathFP%bin\*tgp* %PathApp%\bin /D:%1 /Y
 xcopy %PathFP%bin\*wgp* %PathApp%\bin /D:%1 /Y
